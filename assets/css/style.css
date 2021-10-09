@@ -49,6 +49,7 @@ a{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 104px;
 }
 .container{
     position: relative;
@@ -134,10 +135,47 @@ a{
 }
 .project-card__title{
     width: 138px;
+    min-width: 138px;
     margin-right: 22px;
     font-family: 'NeueMontreal-Bold', sans-serif;
     text-transform: uppercase;
     color: #AAB2C5;
+}
+/*Header*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 24px;
+    background-color: #fff;
+    z-index: 99;
+}
+.header__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1712px;
+    margin: 0 auto;
+    padding-top: 68px;
+    padding-bottom: 12px;
+    border-bottom: 1.3px solid #ABBECA;
+}
+.header__page-title{
+    font-size: 14px;
+}
+.nav-btn{
+    cursor: pointer;
+}
+.nav-btn div{
+    width: 88px;
+    height: 4px;
+    background-color: #3B4D62;
+}
+.nav-btn div:not(:last-child){
+    margin-bottom: 7px;
 }
 /*Footer*/
 .footer{
