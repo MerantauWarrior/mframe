@@ -476,6 +476,7 @@ h1:before{
 }
 .home-description__title{
     margin-right: auto;
+    font-family: 'NeueMontreal-Bold', sans-serif;
 }
 .home-description__text{
     width: 100%;
