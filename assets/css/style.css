@@ -516,6 +516,12 @@ h1:before{
     font-size: 18px;
     line-height: 30px;
 }
+.projects-block{
+    padding-bottom: 36px;
+}
+.projects-block:last-child{
+    margin-bottom: 120px;
+}
 .projects-block__head{
     margin-bottom: 56px;
     padding-top: 55px;
@@ -523,4 +529,5 @@ h1:before{
 }
 .projects-block__title{
     font-size: 20px;
+    text-align: right;
 }

@@ -10,4 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
 
+  document.querySelectorAll('.js-scroll-to').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var to = this.getAttribute('href');
+      var element = document.querySelector(to);
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - 104;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    })
+  })
+
 });
