@@ -531,3 +531,88 @@ h1:before{
     font-size: 20px;
     text-align: right;
 }
+/*---kompetenzen---*/
+.kompetenzen-top{
+    padding: 128px 0 119px 0;
+}
+.kompetenzen-top__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 208px;
+}
+.kompetenzen-categories{
+    margin-bottom: 326px;
+}
+.kompetenzen-categorie{
+    padding: 64px 0;
+    border-top: 1.3px solid #ABBECA;
+}
+.kompetenzen-categorie__head .title-w-link__divider,
+.kompetenzen-categorie__head .title-w-link__link{
+    display: none;
+}
+.kompetenzen-categorie__head .title-w-link__title{
+    font-family: 'NeueMontreal-Regular', sans-serif;
+}
+.kompetenzen-categorie:hover{
+    cursor: pointer;
+}
+.kompetenzen-categorie_opened .kompetenzen-categorie__head .title-w-link__divider,
+.kompetenzen-categorie_opened .kompetenzen-categorie__head .title-w-link__link{
+    display: block;
+}
+.kompetenzen-categorie_opened .kompetenzen-categorie__head .title-w-link__title,
+.kompetenzen-categorie:hover .kompetenzen-categorie__head .title-w-link__title{
+    font-family: 'NeueMontreal-Bold', sans-serif;
+}
+.kompetenzen-categorie__body{
+    display: none;
+    align-items: flex-start;
+    margin-top: 56px;
+}
+.kompetenzen-categorie_opened .kompetenzen-categorie__body{
+    display: flex;
+}
+.kompetenzen-categorie__media{
+    width: 100%;
+    max-width: 496px;
+}
+.kompetenzen-categorie__text{
+    margin-left: 48px;
+    font-size: 19px;
+    line-height: 26px;
+}
+.kompetenzen-customers{
+    margin-bottom: 160px;
+
+}
+.kompetenzen-customers__head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 124px;
+    padding: 23px 0;
+    border-top: 1.3px solid #ABBECA;
+    border-bottom: 1.3px solid #ABBECA;
+}
+.kompetenzen-customers__head-title{
+    margin-right: 249px;
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    font-size: 30px;
+}
+.kompetenzen-customers__head-text{
+    font-size: 19px;
+    line-height: 25px;
+}
+.kompetenzen-customers__logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.kompetenzen-customers__logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 25%;
+    margin-bottom: 82px;
+}

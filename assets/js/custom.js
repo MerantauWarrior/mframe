@@ -17,11 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
       var element = document.querySelector(to);
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition - 104;
-
       window.scrollBy({
         top: offsetPosition,
         behavior: "smooth"
       });
+    })
+  })
+
+  document.querySelectorAll('.kompetenzen-categorie').forEach(function (kompCat) {
+    kompCat.addEventListener('click', function () {
+      if (this.classList.contains('kompetenzen-categorie_opened')){
+        this.classList.remove('kompetenzen-categorie_opened');
+      }else {
+        this.classList.add('kompetenzen-categorie_opened');
+      }
     })
   })
 
