@@ -57,41 +57,87 @@
     </div>
   </header>
   <main>
+    <section class="kontakt-top">
+      <div class="container">
+        <h1>Wir sind often fur Ihre Ideen.</h1>
+        <p class="kontakt__info">
+          <a href="mailto:info@m-frame.de" class="kontakt__email">info@m-frame.de</a>
+          <a href="tel:+49 9721 230 60" class="kontakt__tel">+49 9721 230 60</a>
+        </p>
+        <div class="kontakt-top__text">M:FRAME I DIGITAL. Eibenstrasse 214. 97456 Dittelbrunn</div>
+      </div>
+    </section>
     <section class="kontakt">
       <div class="container">
-        <h1>START A PROJECT?</h1>
-        <p class="kontakt__description">
-          <span class="breaker">Wir sind often fur Ihre Ideen. Schreiben Sie uns Paar Zeilen uber Ihr Vorhaben,wir beraten Sie gern.</span>
-          Nutzen Sie dieses Kontaktformular, senden Sie eine Email Oder rufen Sie einfach an.</p>
-        <form action="" method="get" class="kontakt__form">
-
+        <p class="kontakt__title"><span class="breaker">Schreiben Sie uns Paar Zeilen uber Ihr Vorhaben,</span> wir
+          beraten Sie gern.</p>
+        <form action="" method="get" class="kontakt-form">
+          <div class="kontakt-form__fields">
+            <label for="Betreff" class="kontakt-form__field">
+              <span class="kontakt-form__label">Betreff*</span>
+              <span class="kontakt-form__field-inp">
+              <img src="assets/img/kontakt/Close.svg" alt="x" class="kontakt-form__cross">
+              <input type="text" name="Betreff" id="Betreff" class="kontakt-form__inp" required>
+            </span>
+            </label>
+            <label for="Ansprechpartner" class="kontakt-form__field">
+              <span class="kontakt-form__label">Ansprechpartner:in*</span>
+              <span class="kontakt-form__field-inp">
+              <img src="assets/img/kontakt/Close.svg" alt="x" class="kontakt-form__cross">
+              <input type="text" name="Ansprechpartner" id="Ansprechpartner" class="kontakt-form__inp" required>
+            </span>
+            </label>
+            <label for="Mail" class="kontakt-form__field">
+              <span class="kontakt-form__label">E-Mail*</span>
+              <span class="kontakt-form__field-inp">
+              <img src="assets/img/kontakt/Close.svg" alt="x" class="kontakt-form__cross">
+              <input type="text" name="Mail" id="Mail" class="kontakt-form__inp" required>
+            </span>
+            </label>
+            <label for="Telefon" class="kontakt-form__field">
+              <span class="kontakt-form__label">Telefon / Mobil*</span>
+              <span class="kontakt-form__field-inp">
+               <img src="assets/img/kontakt/Close.svg" alt="x" class="kontakt-form__cross">
+              <input type="tel" name="Telefon" id="Telefon" class="kontakt-form__inp" required>
+            </span>
+            </label>
+            <label for="Nachricht" class="kontakt-form__field">
+              <span class="kontakt-form__label">Ihre Nachricht an uns*</span>
+              <span class="kontakt-form__field-inp">
+              <img src="assets/img/kontakt/Close.svg" alt="x" class="kontakt-form__cross">
+             <input type="text" name="Nachricht" id="Nachricht" class="kontakt-form__inp" required>
+            </span>
+            </label>
+          </div>
+          <div class="kontakt-checkbox">
+            <input type="checkbox" name="q1" id="q1">
+            <label for="q1" class="kontakt-checkbox__label">Ich bitte urn einen Ruckruf</label>
+          </div>
+          <div class="kontakt-checkbox">
+            <input type="checkbox" name="q2" id="q2">
+            <label for="q2" class="kontakt-checkbox__label">Ich erkläre mich mit der Erhebung und Verarbeitung meiner
+              hier angegebenen Daten einverstanden. Alle von mir gemachten Angaben werden ausschließlich zur Bearbeitung
+              meiner Anfrage gespeichert. Nach vollendeter Bearbeitung meiner Anfrage werden alle erhobenen Daten
+              gelöscht. Diese Einwilligung kann jederzeit per E-Mail an info@m-frame.de widerrufen werden. Weitere
+              Informationen erhalten Sie in unserer Datenschutzerklärung.</label>
+          </div>
+          <div class="kontakt-form__submit">
+            <button class="kontakt-form__btn" type="submit">Senden</button>
+          </div>
         </form>
+        <div class="kontakt__bottom">
+          <div class="footer-links">
+            <a href="#">Impressum</a>
+            <span class="footer-links__divider">|</span>
+            <a href="#">Datenschutz</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-contacts">
-        <div class="footer-contacts__title"><span>Let´s</span>&nbsp;<span>connect.</span></div>
-        <div class="footer-contacts__content">
-          <div class="footer-contacts__heading">WIR FREUEN UNS AUF IHRE KONTAKTAUFNAHME.</div>
-          <address class="footer-contacts__items">
-            <a href="mailto:info@m-frame.de">info@m-frame.de</a>
-            <a href="tel:+49 9721 230 60">+49 9721 230 60</a>
-            <span>Eibenstraße 214</span>
-            <span>D-97456 Dittelbrunn</span>
-          </address>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="#">Impressum</a>
-        <span class="footer-links__divider">|</span>
-        <a href="#">Datenschutz</a>
-      </div>
-    </div>
-  </footer>
 </div>
 
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -1,3 +1,16 @@
+$(document).ready(function () {
+  console.log('ready');
+
+  $('.kontakt-form__field').click(function () {
+    $(this).addClass('opened');
+  })
+  $('.kontakt-form__cross').click(function () {
+    $(this).closest('.kontakt-form__field').removeClass('opened');
+  })
+
+})
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementsByClassName('nav-btn')[0].addEventListener('click', function () {

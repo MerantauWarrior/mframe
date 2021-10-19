@@ -45,7 +45,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-a{
+a, button{
     color: inherit;
     text-decoration: none;
     outline: none;
@@ -62,7 +62,15 @@ ul{
     padding: 0;
     list-style: none;
 }
-
+button, input{
+    outline: none;
+    padding: 0;
+    border: none;
+}
+input[type="checkbox"],
+input[type="radio"]{
+    display: none;
+}
 h1{
     position: relative;
     padding: 56px 0;
@@ -646,14 +654,139 @@ h1:before{
     line-height: 22px;
 }
 /*---kontakt---*/
-.kontakt{
-    padding: 186px 0 184px 0;
+.kontakt-top{
+    padding: 245px 0 281px 0;
 }
-.kontakt__description{
-    margin-top: 104px;
+.kontakt-top h1{
+    padding: 0;
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    text-transform: none;
+}
+.kontakt-top h1:after,
+.kontakt-top h1:before{
+    display: none;
+}
+.kontakt__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 45px;
+    padding: 47px 0 52px 0;
+    border-top: 1.3px solid #ABBECA;
+    border-bottom: 1.3px solid #ABBECA;
+}
+.kontakt__email{
+    font-size: 74px;
+}
+.kontakt__tel{
+    margin-top: 24px;
+    font-size: 50px;
+}
+.kontakt-top__text{
+    margin-top: 24px;
     font-size: 19px;
-    line-height: 27px;
 }
-.kontakt__form{
-    margin-top: 142px;
+.kontakt{
+    padding: 160px 0 255px 0;
+    background-color: #3B4D62;
+    color: #ffffff;
+}
+.kontakt__title{
+    font-size: 50px;
+}
+.kontakt-form{
+    margin: 145px 0 192px 0;
+}
+.kontakt-form__fields{
+    margin-bottom: 80px;
+}
+.kontakt-form__field{
+    position: relative;
+    display: block;
+    height: 152px;
+    border-top: 1px solid #ABBECA;
+}
+.kontakt-form__field:last-child{
+    border-bottom: 1px solid #ABBECA;
+}
+.kontakt-form__label{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    font-size: 20px;
+}
+.kontakt-form__field.opened .kontakt-form__label{
+    top: 40px;
+}
+.kontakt-form__field-inp{
+    display: none;
+    position: absolute;
+    top: 96px;
+    left: 0;
+}
+.kontakt-form__field.opened .kontakt-form__field-inp{
+    display: block;
+}
+.kontakt-form__inp{
+    display: block;
+    width: 100%;
+    padding: 0 32px;
+    font-family: 'NeueMontreal-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: transparent;
+}
+.kontakt-form__cross{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.kontakt-checkbox{
+    display: inline-flex;
+    margin-bottom: 80px;
+}
+.kontakt-checkbox__label{
+    position: relative;
+    padding-left: 56px;
+    font-size: 19px;
+    line-height: 24px;
+}
+.kontakt-checkbox__label:before,
+.kontakt-checkbox__label:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+.kontakt-checkbox__label:before{
+    background: transparent url('../img/kontakt/chk-b.svg') center center no-repeat;
+}
+input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
+    background: transparent url('../img/kontakt/checkmark.svg') center center no-repeat;
+}
+.kontakt-form__submit{
+    text-align: right;
+}
+.kontakt-form__btn{
+    padding: 14px 112px;
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    font-size: 30px;
+    color: #3B4D62;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.kontakt-form__btn:hover{
+    background-color: #ABBECA;
+}
+.kontakt__bottom{
+    border-top: 1.3px solid #ABBECA;
 }
