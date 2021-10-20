@@ -139,6 +139,14 @@ h1:before{
 .title-w-link__link:hover{
     font-family: 'NeueMontreal-Bold', sans-serif;
 }
+.arrow-up{
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
 /*cards*/
 .project-cards{
     margin: 0 -24px;
@@ -745,7 +753,6 @@ h1:before{
     cursor: pointer;
     z-index: 2;
 }
-
 .kontakt-checkbox{
     display: inline-flex;
     margin-bottom: 80px;
@@ -789,4 +796,73 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 .kontakt__bottom{
     border-top: 1.3px solid #ABBECA;
+}
+/*innerpages*/
+.innerpage{
+    padding-top: 72px;
+}
+.innerpage__about{
+    position: absolute;
+    top: 206px;
+    left: -24px;
+    width: 100%;
+    max-width: 593px;
+    padding: 84px 48px 75px 48px;
+    background-color: rgba(255, 255, 255, 0.83);
+}
+.innerpage__about h1{
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    text-transform: none;
+}
+.innerpage__about p{
+    margin-top: 55px;
+    font-size: 19px;
+    line-height: 27px;
+}
+.innerpage__row{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 152px;
+}
+.innerpage-right{
+    justify-content: flex-end;
+}
+.innerpage-img{
+    margin-bottom: 48px;
+}
+.innerpage-text{
+    width: 100%;
+    margin-top: 56px;
+    padding-bottom: 52px;
+    border-bottom: 1.3px solid #ABBECA;
+}
+.innerpage-text__title{
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+.innerpage-text p{
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.innerpage-col-1-3,
+.innerpage-col-2-3,
+.innerpage-col-full{
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.innerpage-col-1-3{
+    max-width: 405px;
+}
+.innerpage-col-2-3{
+    max-width: 856px;
+}
+.innerpage-col-full{
+    max-width: 100%;
 }

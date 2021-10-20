@@ -1,11 +1,40 @@
 $(document).ready(function () {
   console.log('ready');
 
+  // kontakt
   $('.kontakt-form__field').click(function () {
     $(this).addClass('opened');
   })
   $('.kontakt-form__cross').click(function () {
     $(this).closest('.kontakt-form__field').removeClass('opened');
+  })
+
+  // back to top
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+      $('.arrow-up').fadeIn();
+    } else {
+      $('.arrow-up').fadeOut();
+    }
+  });
+  $('.arrow-up').click(function(){
+    $('html, body').animate({scrollTop : 0},250);
+  });
+
+  // projects
+  $('.js-scroll-to').click(function (e) {
+    e.preventDefault();
+    var to = $(this).attr('href');
+    $('html,body').animate({scrollTop: $(to).offset().top - 103},250);
+  })
+
+  // kompetenzen
+  $('.kompetenzen-categorie').click(function () {
+    if ($(this).hasClass('kompetenzen-categorie_opened')){
+      $(this).removeClass('kompetenzen-categorie_opened');
+    }else {
+      $(this).addClass('kompetenzen-categorie_opened');
+    }
   })
 
 })
@@ -23,28 +52,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
 
-  document.querySelectorAll('.js-scroll-to').forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      var to = this.getAttribute('href');
-      var element = document.querySelector(to);
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - 104;
-      window.scrollBy({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    })
-  })
-
-  document.querySelectorAll('.kompetenzen-categorie').forEach(function (kompCat) {
-    kompCat.addEventListener('click', function () {
-      if (this.classList.contains('kompetenzen-categorie_opened')){
-        this.classList.remove('kompetenzen-categorie_opened');
-      }else {
-        this.classList.add('kompetenzen-categorie_opened');
-      }
-    })
-  })
 
 });
