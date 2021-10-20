@@ -840,6 +840,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     padding-bottom: 52px;
     border-bottom: 1.3px solid #ABBECA;
 }
+.innerpage__row:last-child .innerpage-text{
+    border-bottom: none;
+}
 .innerpage-text__title{
     font-family: 'NeueMontreal-Bold', sans-serif;
     font-size: 20px;
