@@ -791,7 +791,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 .innerpage-close{
     position: absolute;
     top: 48px;
-    right: 24px;
+    right: 32px;
 }
 .innerpage__about{
     position: absolute;
