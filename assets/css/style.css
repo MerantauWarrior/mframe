@@ -810,6 +810,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     padding: 84px 48px 75px 48px;
     background-color: rgba(255, 255, 255, 0.83);
 }
+.innerpage__about-big{
+    max-width: 732px;
+}
 .innerpage__about h1{
     font-family: 'NeueMontreal-Bold', sans-serif;
     text-transform: none;
