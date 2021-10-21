@@ -872,3 +872,89 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 .innerpage-col-full{
     max-width: 100%;
 }
+.innerpage-close{
+    position: fixed;
+    display: inline-block;
+    top: 64px;
+    right: 120px;
+}
+/*modal*/
+.ovh{
+    overflow: hidden;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-y: auto;
+    z-index: 999;
+}
+.modal-close{
+    position: absolute;
+    top: 80px;
+    right: 24px;
+    cursor: pointer;
+}
+.modal__top{
+    padding-top: 242px;
+}
+.modal__title{
+    margin-bottom: 81px;
+    font-family: 'NeueMontreal-Bold', sans-serif;
+    font-size: 74px;
+    line-height: 89px;
+}
+.modal__text{
+    width: 100%;
+    max-width: 632px;
+    margin-left: auto;
+    margin-bottom: 81px;
+    font-size: 18px;
+}
+.modal__content{
+    margin-top: 81px;
+    margin-bottom: 95px;
+    padding-top: 86px;
+    border-top: 1.3px solid #ABBECA;
+}
+.modal-player{
+    position: relative;
+}
+.modal-player__play{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 198px;
+    height: 198px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.modal-player__play svg{
+    margin-left: 22px;
+}
+.modal .project-card__description{
+    margin-top: 44px;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 13px;
+    line-height: 20px;
+}
+.modal .project-card__title{
+    margin-right: 20px;
+    font-size: 16px;
+}

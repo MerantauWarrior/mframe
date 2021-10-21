@@ -37,6 +37,17 @@ $(document).ready(function () {
     }
   })
 
+  // modal
+  $('.modal-close').click(function () {
+    $('body').removeClass('ovh');
+    $(this).closest('.modal').fadeOut(250);
+  })
+  $('.modal-open').click(function (e) {
+    e.preventDefault();
+    $('body').addClass('ovh');
+    $('.modal').fadeIn(250);
+  });
+
 })
 
 
