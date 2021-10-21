@@ -913,7 +913,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     max-width: 632px;
     margin-left: auto;
     margin-bottom: 81px;
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 27px;
 }
 .modal__content{
     margin-top: 81px;
@@ -949,12 +950,4 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 .modal .project-card__description{
     margin-top: 44px;
-    padding-bottom: 0;
-    border-bottom: none;
-    font-size: 13px;
-    line-height: 20px;
-}
-.modal .project-card__title{
-    margin-right: 20px;
-    font-size: 16px;
 }
