@@ -778,41 +778,37 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 /*innerpages*/
 .innerpage{
-    padding-top: 72px;
+    padding-top: 98px;
 }
 .innerpage-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     text-align: right;
-    z-index: 2;
 }
 .innerpage-close{
-    position: absolute;
-    top: 48px;
-    right: 32px;
+    display: inline-flex;
+    margin-top: -24px;
+    margin-left: auto;
 }
 .innerpage__about{
-    position: absolute;
-    top: 206px;
-    left: -24px;
-    width: 100%;
-    max-width: 593px;
-    padding: 84px 48px 75px 48px;
-    background-color: rgba(255, 255, 255, 0.83);
-}
-.innerpage__about-big{
-    max-width: 732px;
+    margin-bottom: 120px;
+    padding-bottom: 114px;
+    border-bottom: 1.3px solid #ABBECA;
 }
 .innerpage__about h1{
+    max-width: 405px;
+    padding: 0;
     font-family: 'NeueMontreal-Bold', sans-serif;
     text-transform: none;
 }
+.innerpage__about h1:after,
+.innerpage__about h1:before{
+    display: none;
+}
 .innerpage__about p{
-    margin-top: 55px;
-    font-size: 19px;
-    line-height: 27px;
+    max-width: 856px;
+    margin-top: 75px;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 30px;
 }
 .innerpage__row{
     position: relative;
@@ -889,7 +885,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     padding-top: 242px;
 }
 .modal__title{
-    margin-bottom: 81px;
+    margin-bottom: 75px;
     font-family: 'NeueMontreal-Bold', sans-serif;
     font-size: 74px;
     line-height: 89px;
@@ -899,8 +895,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     max-width: 632px;
     margin-left: auto;
     margin-bottom: 81px;
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 30px;
 }
 .modal__content{
     margin-top: 81px;
@@ -936,4 +932,6 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 .modal .project-card__description{
     margin-top: 44px;
+    padding-bottom: 0;
+    border-bottom: none;
 }
