@@ -248,7 +248,7 @@ h1:before{
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 102px;
+    padding: 0 24px;
     background-color: #fff;
     border-bottom: 1.3px solid #ABBECA;
     z-index: 99;
@@ -260,6 +260,8 @@ h1:before{
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
     padding-top: 68px;
     padding-bottom: 12px;
 }
@@ -289,9 +291,10 @@ h1:before{
 /*Navigation*/
 .navigation{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
+    width: 50%;
     height: 100vh;
     padding: 0 104px 103px 104px;
     background-color: rgba(59, 77, 98, 0.95);
@@ -304,7 +307,11 @@ h1:before{
     transition: all 0.25s;
 }
 .navigation_opened{
-    right: -106px;
+    right: -5px;
+    z-index: 999;
+}
+.navigation__inner{
+    max-width: 700px;
 }
 .navigation-list{
     border-top: 1.3px solid #ABBECA;
@@ -343,6 +350,9 @@ h1:before{
     margin-top: 16px;
     font-size: 14px;
     color: #ABBECA;
+}
+.navigation-outer-links a:hover{
+    color: #ffffff;
 }
 .navigation-outer-links__divider{
     margin: 0 10px;
@@ -632,13 +642,24 @@ h1:before{
 }
 /*---datenschutz---*/
 .datenschutz{
-    padding: 186px 0 518px 0;
+    padding: 186px 0 160px 0;
 }
 .datenschutz__text{
     margin-top: 196px;
-    font-family: 'NeueMontreal-Medium', sans-serif;
     font-size: 19px;
-    line-height: 22px;
+}
+.datenschutz__text p:not(:last-child){
+    margin-bottom: 24px;
+}
+.datenschutz__text strong{
+    font-family: 'NeueMontreal-Bold', sans-serif;
+}
+.datenschutz__text p span{
+    font-family: 'NeueMontreal-Medium', sans-serif;
+    color: #ABBECA;
+}
+.datenschutz__text a{
+    text-decoration: underline;
 }
 /*---kontakt---*/
 .kontakt-top{
@@ -778,15 +799,21 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 /*innerpages*/
 .innerpage{
-    padding-top: 98px;
-}
-.innerpage-header{
-    text-align: right;
+    padding-top: 8px;
 }
 .innerpage-close{
-    display: inline-flex;
-    margin-top: -24px;
-    margin-left: auto;
+    position: absolute;
+    top: -24px;
+    right: 24px;
+}
+.innerpage-cat{
+    max-width: 224px;
+    margin-bottom: 82px;
+    padding-bottom: 28px;
+    border-bottom: 1.3px solid #ABBECA;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
 }
 .innerpage__about{
     margin-bottom: 120px;
@@ -831,7 +858,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     padding-bottom: 52px;
     border-bottom: 1.3px solid #ABBECA;
 }
-.innerpage__row:last-child .innerpage-text{
+.innerpage__row:last-child .innerpage-col-full .innerpage-text{
+    padding-bottom: 0;
     border-bottom: none;
 }
 .innerpage-text__title{
