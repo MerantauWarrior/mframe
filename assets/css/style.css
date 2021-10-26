@@ -808,7 +808,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 .innerpage-cat{
     max-width: 224px;
-    margin-bottom: 82px;
+    margin-bottom: 41px;
     padding-bottom: 28px;
     border-bottom: 1.3px solid #ABBECA;
     text-transform: uppercase;
