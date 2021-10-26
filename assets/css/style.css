@@ -294,7 +294,6 @@ h1:before{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 50%;
     height: 100vh;
     padding: 0 104px 103px 104px;
     background-color: rgba(59, 77, 98, 0.95);
