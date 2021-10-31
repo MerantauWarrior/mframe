@@ -970,7 +970,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 
 /*RESPONSIVE*/
-@media all and (max-width: 767px){
+@media all and (max-width: 1024px){
     h1 {
         padding: 40px 0;
         font-size: 48px;
@@ -978,6 +978,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .wrapper{
         padding-top: 54px;
+    }
+    .container,
+    .header{
+        padding: 0 48px;
     }
     /*header*/
     .header__content{
@@ -1006,6 +1010,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         height: 40px;
         margin: 24px 0 24px auto;
     }
+    .navigation__inner{
+        max-width: 100%;
+    }
     .navigation-list{
         width: 100%;
     }
@@ -1028,23 +1035,16 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         flex-wrap: wrap;
         padding: 48px 0;
     }
-    .footer-contacts__title, .footer-contacts__content{
-        width: 100%;
-    }
     .footer-contacts__title{
         margin-top: 0;
         margin-bottom: 32px;
         font-size: 48px;
-    }
-    .footer-contacts__content{
-        padding-left: 0;
     }
     .footer-contacts__title span{
         display: inline-block;
     }
     /*project casrd*/
     .project-card{
-        width: 100%;
         margin-bottom: 80px;
     }
     .project-card__title{
@@ -1087,20 +1087,18 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-left: 0;
         margin-top: 27px;
     }
-    .home-projects__head{
-        margin-bottom: 80px;
-        padding: 24px 0;
+    .home-description__inner{
+        justify-content: space-between;
     }
-    .home-projects .title-w-link__divider{
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
+    .home-description__title{
+        width: 100%;
     }
-    .home-projects .title-w-link{
-        flex-direction: column;
-        align-items: center;
+    .home-description__title .breaker{
+        display: inline;
+    }
+    .home-description__text{
+        max-width: 48%;
+        margin-left: 0;
     }
     /*Projects*/
     .projects-top{
@@ -1113,6 +1111,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-bottom: 40px;
     }
     .projects-top-description__item{
+        max-width: 100%;
         padding-top: 40px;
     }
     .projects-top-description__text{
@@ -1129,18 +1128,14 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         padding: 80px 0;
     }
     .kompetenzen-top__inner{
+        justify-content: space-between;
         margin-top: 80px;
     }
     .kompetenzen-categorie{
         padding: 40px 0;
     }
     .kompetenzen-categorie__body{
-        flex-wrap: wrap;
         margin-top: 40px;
-    }
-    .kompetenzen-categorie__text{
-        margin-top: 40px;
-        margin-left: 0;
     }
     .kompetenzen-categories{
         margin-bottom: 80px;
@@ -1148,17 +1143,15 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .kompetenzen-customers{
         margin-bottom: 80px;
     }
+    .kompetenzen-customers__logo{
+        padding: 0 24px;
+    }
     .kompetenzen-customers__head{
         flex-wrap: wrap;
         margin-bottom: 80px;
     }
     .kompetenzen-customers__head-text{
         margin-top: 24px;
-    }
-    .kompetenzen-customers__logo{
-        max-width: 50%;
-        margin-bottom: 40px;
-        padding: 0 24px;
     }
     .impressum,
     .datenschutz{
@@ -1169,25 +1162,80 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-top: 80px;
         word-break: break-word;
     }
-    .modal__content {
-        margin-top: 48px;
-        padding-top: 48px;
+    .innerpage-col-1-3{
+        max-width: calc(50% - 48px);
     }
-    .innerpage__about p, .innerpage__about-video p{
-        margin-top: 40px;
+    .innerpage-text.innerpage-col-1-3{
+        max-width: 100%;
+    }
+    .innerpage__row:last-child .innerpage-text{
+        border-bottom: none;
     }
     .innerpage__about{
         margin-bottom: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 64px;
     }
     .innerpage__row{
         margin-bottom: 56px;
+        justify-content: center;
+    }
+    .innerpage__about p, .innerpage__about-video p{
+        max-width: 100%;
+        margin-top: 40px;
     }
     .innerpage-img{
         margin-bottom: 0;
     }
     .innerpage img{
         margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media all and (max-width: 767px){
+    .container,
+    .header{
+        padding: 0 24px;
+    }
+    /*Home*/
+    .home-projects__head{
+        margin-bottom: 80px;
+        padding: 24px 0;
+    }
+    .home-projects .title-w-link__divider{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .home-projects .title-w-link{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Kompetenzen*/
+    .kompetenzen-categorie__body{
+        flex-wrap: wrap;
+    }
+    .kompetenzen-categorie__text{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .kompetenzen-customers__logo{
+        max-width: 50%;
+        margin-bottom: 80px;
+    }
+    .kompetenzen-customers__logo:nth-child(4n),
+    .kompetenzen-customers__logo:nth-child(4n+1){
+        justify-content: center;
+    }
+    .modal__content {
+        margin-top: 48px;
+        padding-top: 48px;
+    }
+    .innerpage-col-1-3,
+    .innerpage-col-2-3{
+        max-width: 100%;
     }
     .innerpage__row:last-child .innerpage-text {
         padding-bottom: 0;
@@ -1201,5 +1249,27 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .innerpage h1{
         font-size: 32px;
         line-height: 48px;
+    }
+}
+@media all and (max-width: 700px){
+    /*project casrd*/
+    .project-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card{
+        width: auto;
+    }
+    /*footer*/
+    .footer-contacts__title, .footer-contacts__content{
+        width: 100%;
+    }
+    .footer-contacts__content{
+        padding-left: 0;
+    }
+    /*Kompetenzen*/
+    .kompetenzen-customers__logo{
+        margin-bottom: 40px;
     }
 }
