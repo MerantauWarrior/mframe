@@ -1,3 +1,8 @@
+var isMob = false;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  console.log('you use mobile');
+  isMob = true;
+}
 $(document).ready(function () {
   console.log('ready');
 
@@ -24,8 +29,9 @@ $(document).ready(function () {
   // projects
   $('.js-scroll-to').click(function (e) {
     e.preventDefault();
+    var scrDiff = isMob ? 52 : 103;
     var to = $(this).attr('href');
-    $('html,body').animate({scrollTop: $(to).offset().top - 103},250);
+    $('html,body').animate({scrollTop: $(to).offset().top - scrDiff},250);
   })
 
   // kompetenzen
@@ -37,23 +43,26 @@ $(document).ready(function () {
     }
   })
 
-  // modal
-  $('.modal-close').click(function () {
-    $('body').removeClass('ovh');
-    $(this).closest('.modal').fadeOut(250);
-  })
-  $('.modal-open').click(function (e) {
-    e.preventDefault();
-    $('body').addClass('ovh');
-    $('.modal').fadeIn(250);
-  });
-
   // navigation
   $('.nav-btn').click(function () {
     $('.navigation').addClass('navigation_opened');
   })
   $('.nav-close').click(function () {
     $('.navigation').removeClass('navigation_opened');
+  })
+
+  // video
+  $('.js-play-video').click(function () {
+    $(this).closest('.modal__content').find('.video-item').trigger('play');
+    $(this).closest('.modal__content').find('.video-item').removeAttr('poster');
+    $(this).closest('.modal__content').find('.video-item').attr('controls', true);
+    $(this).hide();
+  })
+
+  // close
+  $('.innerpage-close').click(function (e) {
+    e.preventDefault();
+    window.location = document.referrer;
   })
 
 })
