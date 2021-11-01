@@ -60,9 +60,14 @@ $(document).ready(function () {
   })
 
   // close
+  var referer = false;
+  if (document.referrer !== ''){
+    referer = true;
+  }
   $('.innerpage-close').click(function (e) {
     e.preventDefault();
-    window.location = document.referrer;
+    link = $(this).attr('href');
+    window.location = referer ? document.referrer : window.location.protocol +'//'+window.location.host + '/mframe/'+ link;
   })
 
 })
