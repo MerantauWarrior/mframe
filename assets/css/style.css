@@ -983,6 +983,12 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .header{
         padding: 0 48px;
     }
+    .arrow-up {
+        right: 4px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
     /*header*/
     .header__content{
         padding-top: 24px;
@@ -1092,6 +1098,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .home-description__title{
         width: 100%;
+        font-size: 20px;
     }
     .home-description__title .breaker{
         display: inline;
@@ -1109,6 +1116,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .projects-top-description{
         margin-top: 80px;
     }
+    .projects-top-description__item:first-child{
+        border-top: none;
+    }
     .projects-top-description__item:not(:last-child){
         margin-bottom: 40px;
     }
@@ -1118,6 +1128,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .projects-top-description__text{
         margin-top: 40px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .projects-block {
         padding-bottom: 0;
@@ -1154,6 +1166,12 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .kompetenzen-customers__head-text{
         margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .kompetenzen-categorie__text{
+        font-size: 16px;
+        line-height: 24px;
     }
     .impressum,
     .datenschutz{
@@ -1251,6 +1269,20 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .innerpage h1{
         font-size: 32px;
         line-height: 48px;
+    }
+    /*project casrd*/
+    .project-card{
+        margin-bottom: 56px;
+    }
+    .arrow-up {
+        right: 0;
+        bottom: 16px;
+        width: 24px;
+        height: 24px;
+    }
+    /*foote*/
+    .footer-contacts__items > *:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
 @media all and (max-width: 700px){
