@@ -970,7 +970,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 
 /*RESPONSIVE*/
-@media all and (max-width: 1024px){
+@media all and (max-width: 1366px){
     h1 {
         padding: 40px 0;
         font-size: 48px;
@@ -1005,8 +1005,12 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     /*navigation*/
     .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 0 24px 50px 24px;
+        padding: 24px 72px;
     }
     .navigation_opened{
         right: 0;
@@ -1014,10 +1018,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .nav-close{
         width: 40px;
         height: 40px;
-        margin: 24px 0 24px auto;
+        margin: 0 0 24px auto;
     }
     .navigation__inner{
-        max-width: 100%;
+        width: 100%;
     }
     .navigation-list{
         width: 100%;
@@ -1025,7 +1029,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .navigation-item{
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         padding: 24px 0;
     }
     .navigation-submenu{
@@ -1217,6 +1221,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .header{
         padding: 0 24px;
     }
+    /*navigation*/
+    .navigation{
+        padding: 24px;
+    }
     /*Home*/
     .home-projects__head{
         margin-bottom: 80px;
@@ -1283,6 +1291,11 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     /*foote*/
     .footer-contacts__items > *:not(:last-child) {
         margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 767px) and (orientation: landscape){
+    .navigation {
+        justify-content: flex-start;
     }
 }
 @media all and (max-width: 700px){
