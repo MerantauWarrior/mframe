@@ -971,13 +971,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 
 /*RESPONSIVE*/
 @media all and (max-width: 1366px){
-    h1 {
-        padding: 40px 0;
-        font-size: 48px;
-        line-height: 60px;
-    }
     .wrapper{
-        padding-top: 54px;
+        padding-top: 56px;
     }
     .container,
     .header{
@@ -991,13 +986,14 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     /*header*/
     .header__content{
-        padding-top: 24px;
+        padding-top: 21px;
+        padding-bottom: 16px;
     }
     .header__logo{
-        width: 100px;
+        width: 125px;
     }
     .nav-btn{
-        margin-left: 52px;
+        margin-left: 77px;
     }
     .nav-btn,
     .nav-btn div{
@@ -1037,184 +1033,6 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-top: 20px;
         margin-left: 0;
     }
-    /*footer*/
-    .footer{
-        padding-bottom: 40px;
-    }
-    .footer-contacts{
-        flex-wrap: wrap;
-        padding: 48px 0;
-    }
-    .footer-contacts__title{
-        margin-top: 0;
-        margin-bottom: 32px;
-        font-size: 48px;
-    }
-    .footer-contacts__title span{
-        display: inline-block;
-    }
-    /*project casrd*/
-    .project-card{
-        margin-bottom: 80px;
-    }
-    .project-card__title{
-        width: 124px;
-        min-width: 124px;
-        margin-right: 16px;
-    }
-    .project-card__description{
-        margin-top: 40px;
-        padding-bottom: 40px;
-        font-size: 14px;
-        line-height: 22px;
-    }
-    .project-card:nth-last-child(2) .project-card__description{
-        padding-bottom: 40px;
-        border-bottom: 1px solid #ABBECA;
-    }
-    .project-card__btn {
-        left: 51px;
-        bottom: 51px;
-        width: 102px;
-        height: 102px;
-        margin-left: -51px;
-        margin-bottom: -51px;
-        font-size: 32px;
-    }
-    /*Home*/
-    .home-categories{
-        padding: 80px 0;
-    }
-    .home-categories__item{
-        font-size: 48px;
-        line-height: 60px;
-    }
-    .home-description{
-        margin-bottom: 80px;
-    }
-    .home-description__text{
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 27px;
-    }
-    .home-description__inner{
-        justify-content: space-between;
-    }
-    .home-description__title{
-        width: 100%;
-        font-size: 20px;
-    }
-    .home-description__title .breaker{
-        display: inline;
-    }
-    .home-description__text{
-        max-width: 100%;
-        margin-left: 0;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    /*Projects*/
-    .projects-top{
-        padding: 80px 0;
-    }
-    .projects-top-description{
-        margin-top: 80px;
-    }
-    .projects-top-description__item:first-child{
-        border-top: none;
-    }
-    .projects-top-description__item:not(:last-child){
-        margin-bottom: 40px;
-    }
-    .projects-top-description__item{
-        max-width: 100%;
-        padding-top: 40px;
-    }
-    .projects-top-description__text{
-        margin-top: 40px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .projects-block {
-        padding-bottom: 0;
-    }
-    .projects-block:last-child{
-        margin-bottom: 0;
-    }
-    /*Kompetenzen*/
-    .kompetenzen-top{
-        padding: 80px 0;
-    }
-    .kompetenzen-top__inner{
-        justify-content: space-between;
-        margin-top: 80px;
-    }
-    .kompetenzen-categorie{
-        padding: 40px 0;
-    }
-    .kompetenzen-categorie__body{
-        margin-top: 40px;
-    }
-    .kompetenzen-categories{
-        margin-bottom: 80px;
-    }
-    .kompetenzen-customers{
-        margin-bottom: 80px;
-    }
-    .kompetenzen-customers__logo{
-        padding: 0 24px;
-    }
-    .kompetenzen-customers__head{
-        flex-wrap: wrap;
-        margin-bottom: 80px;
-    }
-    .kompetenzen-customers__head-text{
-        margin-top: 24px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .kompetenzen-categorie__text{
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .impressum,
-    .datenschutz{
-        padding: 80px 0;
-    }
-    .impressum__text,
-    .datenschutz__text{
-        margin-top: 80px;
-        word-break: break-word;
-    }
-    .innerpage-col-1-3{
-        max-width: calc(50% - 48px);
-    }
-    .innerpage-text.innerpage-col-1-3{
-        max-width: 100%;
-    }
-    .innerpage__row:last-child .innerpage-text{
-        border-bottom: none;
-    }
-    .innerpage__about{
-        margin-bottom: 80px;
-        padding-bottom: 64px;
-    }
-    .innerpage__row{
-        margin-bottom: 56px;
-        justify-content: center;
-    }
-    .innerpage__about p, .innerpage__about-video p{
-        max-width: 100%;
-        margin-top: 40px;
-    }
-    .innerpage-img{
-        margin-bottom: 0;
-    }
-    .innerpage img{
-        margin-bottom: 24px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 @media all and (max-width: 767px){
     .container,
@@ -1225,72 +1043,128 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .navigation{
         padding: 24px;
     }
+    /*header*/
+    .header__page-title{
+        display: none;
+    }
     /*Home*/
-    .home-projects__head{
-        margin-bottom: 80px;
+    .home-categories{
+        padding: 56px 0 79px 0;
+    }
+    .home-categories__title{
+        margin-bottom: 9px;
+        font-size: 12px;
+    }
+    .home-categories__items:after, .home-categories__items:before{
+        width: 136px;
+    }
+    .home-categories__items{
+        margin-right: -15px;
         padding: 24px 0;
     }
-    .home-projects .title-w-link__divider{
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
+    .home-categories__item{
+        font-size: 28px;
+        line-height: 35px;
     }
-    .home-projects .title-w-link{
-        flex-direction: column;
-        align-items: center;
+    .home-description{
+        margin-bottom: 56px;
     }
-    /*Kompetenzen*/
-    .kompetenzen-categorie__body{
-        flex-wrap: wrap;
+    .home-description__title{
+        margin-bottom: 56px;
+        font-size: 18px;
+        line-height: 21px;
     }
-    .kompetenzen-categorie__text{
-        margin-top: 40px;
-        margin-left: 0;
-    }
-    .kompetenzen-customers__logo{
-        max-width: 50%;
-        margin-bottom: 80px;
-    }
-    .kompetenzen-customers__logo:nth-child(4n),
-    .kompetenzen-customers__logo:nth-child(4n+1){
-        justify-content: center;
-    }
-    .modal__content {
-        margin-top: 48px;
-        padding-top: 48px;
-    }
-    .innerpage-col-1-3,
-    .innerpage-col-2-3{
+    .home-description__text{
         max-width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+        line-height: 18px;
     }
-    .innerpage__row:last-child .innerpage-text {
-        padding-bottom: 0;
-        border-bottom: none;
+    .home-description__text:last-child{
+        margin-top: 18px;
     }
-    .innerpage-close{
-        top: 0;
-        width: 40px;
-        height: 40px;
+    .home-projects__head{
+        margin-bottom: 56px;
+        padding: 24px 0;
     }
-    .innerpage h1{
-        font-size: 32px;
-        line-height: 48px;
+    .title-w-link__title{
+        font-size: 14px;
+        line-height: 18px;
     }
-    /*project casrd*/
+    .title-w-link__divider{
+        height: 16px;
+        margin: 0 16px;
+    }
+    .title-w-link__link{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .title-w-link__link span{
+        display: none;
+    }
+    /*project cards*/
     .project-card{
         margin-bottom: 56px;
     }
-    .arrow-up {
-        right: 0;
-        bottom: 16px;
-        width: 24px;
-        height: 24px;
+    .project-card__btn{
+        left: 39px;
+        bottom: 39px;
+        width: 78px;
+        height: 78px;
+        margin-left: -39px;
+        margin-bottom: -39px;
+        font-size: 25px;
+        line-height: 35px;
     }
-    /*foote*/
-    .footer-contacts__items > *:not(:last-child) {
-        margin-bottom: 10px;
+    .project-card__title{
+        width: 105px;
+        min-width: 105px;
+        margin-right: 17px;
+    }
+    .project-card__description{
+        margin-top: 24px;
+        padding-bottom: 24px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    /*footer*/
+    .footer{
+        padding-bottom: 17px;
+    }
+    .footer-contacts{
+        padding: 56px 0;
+    }
+    .footer-contacts__title, .footer-contacts__content{
+        width: 100%;
+    }
+    .footer-contacts__title span{
+        display: inline-block;
+        padding-bottom: 9px;
+    }
+    .footer-contacts__title{
+        margin-top: 0;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .footer-contacts__title span:after{
+        left: 2px;
+        right: 2px;
+        height: 1px;
+    }
+    .footer-contacts__content{
+        margin-top: 34px;
+        padding-left: 0;
+    }
+    .footer-contacts__heading{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .footer-contacts__items{
+        margin-top: 29px;
+        font-size: 14px;
+    }
+    .footer-contacts__items > *:not(:last-child){
+        margin-bottom: 15px;
     }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
@@ -1307,16 +1181,5 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .project-card{
         width: auto;
-    }
-    /*footer*/
-    .footer-contacts__title, .footer-contacts__content{
-        width: 100%;
-    }
-    .footer-contacts__content{
-        padding-left: 0;
-    }
-    /*Kompetenzen*/
-    .kompetenzen-customers__logo{
-        margin-bottom: 40px;
     }
 }
