@@ -1121,6 +1121,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         min-width: 105px;
         margin-right: 17px;
     }
+    .project-card__row:not(:last-child){
+        margin-bottom: 16px;
+    }
     .project-card__description{
         margin-top: 24px;
         padding-bottom: 24px;
