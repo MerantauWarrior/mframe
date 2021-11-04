@@ -1195,6 +1195,17 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .projects-block:last-child{
         margin-bottom: 0;
     }
+    .impressum,
+    .datenschutz{
+        padding: 56px 0;
+    }
+    .impressum__text,
+    .datenschutz__text{
+        margin-top: 56px;
+        font-size: 14px;
+        line-height: 18px;
+        word-break: break-word;
+    }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
     .navigation {
