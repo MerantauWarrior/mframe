@@ -1273,6 +1273,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .project-card{
         width: auto;
     }
+    .project-card:nth-last-child(2) .project-card__description{
+        padding-bottom: 24px;
+        border-bottom: 1px solid #ABBECA;
+    }
     /*footer*/
     .footer-contacts__title, .footer-contacts__content{
         width: 100%;
