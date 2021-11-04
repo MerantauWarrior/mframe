@@ -94,6 +94,10 @@ h1:after{
 h1:before{
     bottom: 0;
 }
+p{
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
 
 .wrapper{
     display: flex;
