@@ -29,7 +29,7 @@ $(document).ready(function () {
   // projects
   $('.js-scroll-to').click(function (e) {
     e.preventDefault();
-    var scrDiff = isMob ? 52 : 103;
+    var scrDiff = isMob ? 55 : 103;
     var to = $(this).attr('href');
     $('html,body').animate({scrollTop: $(to).offset().top - scrDiff},250);
   })

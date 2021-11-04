@@ -1039,6 +1039,11 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .header{
         padding: 0 24px;
     }
+    h1{
+        padding: 24px 0;
+        font-size: 28px;
+        line-height: 35px;
+    }
     /*navigation*/
     .navigation{
         padding: 24px;
@@ -1161,6 +1166,34 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .footer-contacts__items > *:not(:last-child){
         margin-bottom: 15px;
+    }
+    /*Projects*/
+    .projects-top{
+        padding: 56px 0;
+    }
+    .projects-top-description{
+        margin-top: 56px;
+    }
+    .projects-top-description__item:not(:last-child){
+        margin-bottom: 56px;
+    }
+    .projects-top-description__item{
+        max-width: 100%;
+        padding-top: 24px;
+    }
+    .projects-top-description__item:first-child{
+        border-top: none;
+    }
+    .projects-top-description__text{
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .projects-block__title{
+        font-size: 18px;
+    }
+    .projects-block:last-child{
+        margin-bottom: 0;
     }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
