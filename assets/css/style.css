@@ -1206,6 +1206,57 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         line-height: 18px;
         word-break: break-word;
     }
+    /*Kompetenzen*/
+    .kompetenzen-categories{
+        margin-bottom: 56px;
+    }
+    .kompetenzen-top{
+        padding: 56px 0;
+    }
+    .kompetenzen-top__inner{
+        margin-top: 56px;
+    }
+    .kompetenzen-categorie{
+        padding: 24px 0;
+    }
+    .kompetenzen-categorie__body{
+        margin-top: 24px;
+    }
+    .kompetenzen-categorie__text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .kompetenzen-customers{
+        margin-bottom: 56px;
+    }
+    .kompetenzen-customers__head{
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+    }
+    .kompetenzen-customers__head-title{
+        width: 100%;
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .kompetenzen-customers__head-text{
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .kompetenzen-customers__logo{
+        max-width: 33.3333333%;
+        margin-bottom: 56px;
+        padding: 0 16px;
+    }
+    .kompetenzen-customers__logo:nth-child(4n+1),
+    .kompetenzen-customers__logo:nth-child(4n){
+        justify-content: center;
+    }
+    .kompetenzen-categorie__media{
+        min-width: 200px;
+        max-width: 200px;
+    }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
     .navigation {
@@ -1229,5 +1280,19 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .footer-contacts__content{
         margin-top: 34px;
         padding-left: 0;
+    }
+    /*Kompetenzen*/
+    .kompetenzen-customers__logo{
+        margin-bottom: 32px;
+    }
+    .kompetenzen-categorie__body{
+        flex-direction: column;
+    }
+    .kompetenzen-categorie__text{
+        margin-top: 24px;
+        margin-left: 0;
+    }
+    .kompetenzen-categorie__media{
+        max-width: 100%;
     }
 }
