@@ -1250,6 +1250,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .kompetenzen-customers__logo{
         max-width: 33.3333333%;
+        height: 40px;
         margin-bottom: 56px;
         padding: 0 16px;
     }
