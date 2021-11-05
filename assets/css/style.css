@@ -1262,6 +1262,45 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         min-width: 200px;
         max-width: 200px;
     }
+    /*Innerpage*/
+    .innerpage{
+        padding-top: 0;
+    }
+    .innerpage__about p, .innerpage__about-video p{
+        max-width: 100%;
+        margin-top: 56px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .modal__content{
+        margin-top: 48px;
+        margin-bottom: 56px;
+        padding-top: 56px;
+    }
+    .modal .project-card__description,
+    .innerpage .project-card__description{
+        margin-top: 24px;
+    }
+    .modal-player__play{
+        width: 80px;
+        height: 80px;
+    }
+    .modal-player__play svg{
+        width: 50%;
+        margin-left: 12px;
+    }
+    .innerpage-cat {
+        display: inline-block;
+        margin-bottom: 56px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .innerpage-close{
+        top: -4px;
+        width: 32px;
+        height: 32px;
+    }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
     .navigation {
