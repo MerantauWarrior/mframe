@@ -1301,6 +1301,24 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         width: 32px;
         height: 32px;
     }
+    .innerpage__about{
+        margin-bottom: 56px;
+        padding-bottom: 48px;
+    }
+    .innerpage__row{
+        margin-bottom: 56px;
+    }
+    .innerpage-text p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .innerpage-img{
+        margin-bottom: 24px;
+    }
+    .innerpage-text{
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 @media all and (max-width: 767px) and (orientation: landscape){
     .navigation {
