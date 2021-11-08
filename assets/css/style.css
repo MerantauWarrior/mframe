@@ -1086,8 +1086,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .home-description__text{
         max-width: 100%;
         margin-left: 0;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 20px;
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
     }
     .home-description__text:last-child{
         margin-top: 18px;
