@@ -1086,13 +1086,13 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .home-description__text{
         max-width: 100%;
         margin-left: 0;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
     .home-description__text:last-child{
-        margin-top: 18px;
+        margin-top: 21px;
     }
     .home-projects__head{
         margin-bottom: 56px;
@@ -1195,8 +1195,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .projects-top-description__text{
         margin-top: 24px;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
@@ -1213,8 +1213,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .impressum__text,
     .datenschutz__text{
         margin-top: 56px;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
         word-break: break-word;
@@ -1236,8 +1236,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-top: 24px;
     }
     .kompetenzen-categorie__text{
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
@@ -1256,8 +1256,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .kompetenzen-customers__head-text{
         margin-top: 16px;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
@@ -1282,8 +1282,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .innerpage__about p, .innerpage__about-video p{
         max-width: 100%;
         margin-top: 56px;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
@@ -1324,8 +1324,8 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-bottom: 56px;
     }
     .innerpage-text p{
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 21px;
         /*font-size: 14px;*/
         /*line-height: 18px;*/
     }
