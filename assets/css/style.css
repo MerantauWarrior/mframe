@@ -1038,7 +1038,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         margin-left: 0;
     }
 }
-@media all and (max-width: 767px){
+@media all and (max-width: 1000px){
     .container,
     .header{
         padding: 0 24px;
@@ -1342,7 +1342,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
         border-bottom: none;
     }
 }
-@media all and (max-width: 767px) and (orientation: landscape){
+@media all and (max-width: 1000px) and (orientation: landscape){
     .navigation {
         justify-content: flex-start;
     }
