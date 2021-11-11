@@ -1206,7 +1206,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     /*innerpages*/
     .innerpage__about p, .innerpage__about-video p{
-        max-width: 100%;
+        max-width: 60%;
         font-size: 16px;
         line-height: 27px;
     }
