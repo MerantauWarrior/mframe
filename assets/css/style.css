@@ -1043,6 +1043,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 
 @media all and (min-width: 1024px) and (max-width: 1366px){
+    .container,
+    .header{
+        padding: 0 96px;
+    }
     h1{
         padding: 48px 0;
         font-size: 48px;
@@ -1239,7 +1243,7 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 @media all and (max-width: 1023px){
     .container,
     .header{
-        padding: 0 24px;
+        padding: 0 64px;
     }
     h1{
         padding: 24px 0;
@@ -1543,6 +1547,12 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 @media all and (max-width: 1023px) and (orientation: landscape){
     .navigation {
         justify-content: flex-start;
+    }
+}
+@media all and (max-width: 767px){
+    .container,
+    .header{
+        padding: 0 24px;
     }
 }
 @media all and (max-width: 600px){
