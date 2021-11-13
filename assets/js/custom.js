@@ -7,11 +7,12 @@ $(document).ready(function () {
   console.log('ready');
 
   // kontakt
-  $('.kontakt-form__field').click(function () {
-    $(this).addClass('opened');
+  $('.kontakt-form__label').click(function () {
+    $(this).parent().addClass('opened');
   })
   $('.kontakt-form__cross').click(function () {
     $(this).closest('.kontakt-form__field').removeClass('opened');
+    $(this).siblings('input').val('');
   })
 
   // back to top

@@ -308,10 +308,10 @@ p{
     -ms-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
+    z-index: 999;
 }
 .navigation_opened{
     right: -5px;
-    z-index: 999;
 }
 .navigation__inner{
     max-width: 700px;
@@ -727,6 +727,7 @@ p{
     position: absolute;
     top: 65px;
     left: 0;
+    right: 0;
     font-family: 'NeueMontreal-Bold', sans-serif;
     font-size: 20px;
 }
@@ -738,6 +739,7 @@ p{
     position: absolute;
     top: 96px;
     left: 0;
+    right: 0;
 }
 .kontakt-form__field.opened .kontakt-form__field-inp{
     display: block;
@@ -1226,6 +1228,43 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .innerpage-col-2-3 {
         max-width: 62%;
     }
+    /*Kontakt*/
+    .kontakt-top,
+    .kontakt{
+        padding: 96px 0;
+    }
+    .kontakt-top__text{
+        font-size: 16px;
+    }
+    .kontakt__email {
+        font-size: 48px;
+    }
+    .kontakt__tel{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .kontakt-form{
+        margin: 96px 0;
+    }
+    .kontakt__title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .kontakt__title .breaker{
+        display: inline;
+    }
+    .kontakt-checkbox__label{
+        font-size: 16px;
+    }
+    .kontakt-checkbox{
+        margin-bottom: 48px;
+    }
+    .kontakt-form__label{
+        font-size: 16px;
+    }
+    .kontakt-form__btn{
+        font-size: 16px;
+    }
 }
 @media all and (min-width: 1024px) and (max-width: 1250px){
     .home-description__title{
@@ -1234,7 +1273,6 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .home-description__text{
         max-width: 484px;
         margin-left: auto;
-        line-height: 27px;
     }
     .home-description__text:last-child{
         margin-top: 27px;
@@ -1542,6 +1580,67 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     .innerpage__row .innerpage-text{
         padding-bottom: 0;
         border-bottom: none;
+    }
+    /*Kontakt*/
+    .kontakt-top{
+        padding: 56px 0;
+    }
+    .kontakt{
+        padding: 56px 0 17px 0;
+    }
+    .kontakt__info{
+        margin-top: 24px;
+        padding: 24px 0;
+    }
+    .kontakt__email{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .kontakt-top__text,
+    .kontakt__tel,
+    .kontakt__title,
+    .kontakt-form__label{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .kontakt__tel{
+        margin-top: 16px;
+    }
+    .kontakt__title .breaker{
+        display: inline;
+    }
+    .kontakt-form{
+        margin: 56px 0;
+    }
+    .kontakt-form__fields{
+        margin-bottom: 56px;
+    }
+    .kontakt-checkbox{
+        margin-bottom: 24px;
+    }
+    .kontakt-checkbox__label{
+        font-size: 16px;
+        padding-left: 48px;
+    }
+    .kontakt-form__btn{
+        padding: 14px 80px;
+        font-size: 16px;
+    }
+    .kontakt-form__field{
+        height: 120px;
+    }
+    .kontakt-form__label{
+        top: 50px;
+    }
+    .kontakt-form__field.opened .kontakt-form__label{
+        top: 32px;
+    }
+    .kontakt-form__field-inp{
+        top: 72px;
+    }
+    .kontakt-form__inp{
+        font-size: 16px;
+        line-height: 21px;
     }
 }
 @media all and (max-width: 1023px) and (orientation: landscape){
