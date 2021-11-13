@@ -1598,10 +1598,12 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .kontakt-top__text,
     .kontakt__tel,
-    .kontakt__title,
     .kontakt-form__label{
         font-size: 16px;
         line-height: 21px;
+    }
+    .kontakt__title{
+        font-size: 18px;
     }
     .kontakt__tel{
         margin-top: 16px;
@@ -1617,6 +1619,9 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
     }
     .kontakt-checkbox{
         margin-bottom: 24px;
+    }
+    .kontakt-form__submit{
+        padding-top: 24px;
     }
     .kontakt-checkbox__label{
         font-size: 16px;
