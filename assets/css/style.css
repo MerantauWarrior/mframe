@@ -57,6 +57,9 @@ a, button{
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -979,8 +982,10 @@ input[type="checkbox"]:checked + .kontakt-checkbox__label:after{
 }
 
 /*RESPONSIVE*/
-@media all and (min-width: 1440px) and (max-width: 1900px){
-    .header__content,
+@media all and (min-width: 1367px) and (max-width: 1919px){
+    .header__content{
+        max-width: 1152px;
+    }
     .container{
         max-width: 1200px;
     }
